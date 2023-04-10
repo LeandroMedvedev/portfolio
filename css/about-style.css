@@ -1,0 +1,190 @@
+/* -------------------------------- */
+/* COLORS */
+:root {
+  --wild-sand: #e7e4df;
+  --light-grey: #d2d2d2;
+  --shuttle-grey: #5f6368;
+  --white-smoke: #f8f8f8;
+  --ebony: #282c34;
+  --moccaccino: #5c2b2b;
+}
+
+/* -------------------------------- */
+/* GENERAL */
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--white-smoke);
+}
+
+header,
+footer {
+  width: 99.5%;
+}
+
+header {
+  top: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+/* -------------------------------- */
+/* MAIN */
+main {
+  width: 85%;
+  min-width: 300px;
+  padding: 0;
+  margin: 150px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  font-family: "Alegreya", serif;
+}
+
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+main section div,
+#my-history {
+  padding: 0 9px 13px;
+}
+
+#greetings div,
+#my-history {
+  font-size: 1.2em;
+}
+
+#greetings {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+#greetings div {
+  min-width: 300px;
+  margin: 0 0 40px 0;
+}
+
+#greetings div p {
+  max-width: 457px;
+}
+
+#history-container,
+.paragraphs-container {
+  margin: 0;
+}
+
+main section:last-child p {
+  text-indent: 15px;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+#first-paragraph::first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#me-cap {
+  width: 265px;
+  border-radius: 8%;
+  margin-bottom: 10px;
+  filter: grayscale(90%);
+  opacity: 0.9;
+}
+
+h2 {
+  font-family: "Genos", sans-serif;
+  font-weight: 900;
+  text-shadow: 0 0 3px var(--ebony);
+  font-size: 2.8em;
+}
+
+#my-history h2 {
+  text-align: center;
+  font-size: 2.4em;
+  margin-bottom: 20px;
+}
+
+hr {
+  width: 90%;
+  padding: 0;
+  border: none;
+  overflow: visible; /* For IE */
+  text-align: center;
+  border-top: medium double var(--light-grey);
+}
+hr:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+}
+
+#tina-anchorage {
+  text-decoration: none;
+  color: var(--moccaccino);
+}
+
+/* -------------------------------- */
+/* MEDIA QUERIES */
+
+/* 500PX | Min-Width */
+@media only screen and (min-width: 500px) {
+  #greetings div,
+  #my-history {
+    font-size: 1.4em;
+  }
+  #greetings div p {
+    text-align: center;
+  }
+}
+
+/* -------------------------------- */
+/* 700PX | Min-Width */
+@media only screen and (min-width: 700px) {
+  #greetings,
+  #my-history {
+    background-color: rgba(210, 210, 210, 0.1);
+    border-radius: 6px;
+  }
+  #greetings {
+    margin-bottom: 32px;
+    padding: 12px;
+  }
+}
+
+/* -------------------------------- */
+/* 850PX | Min-Width */
+@media only screen and (min-width: 850px) {
+  #greetings {
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+  }
+  #greetings div {
+    margin: 0;
+    padding-left: 22px;
+  }
+  #me-cap {
+    width: 250px;
+  }
+}
+
+/* -------------------------------- */
+/* 1070PX | Min-Width */
+@media only screen and (min-width: 1070px) {
+  #history-container {
+    display: flex;
+  }
+  .paragraphs-container {
+    width: 50%;
+  }
+}

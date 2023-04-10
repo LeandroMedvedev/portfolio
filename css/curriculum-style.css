@@ -1,0 +1,162 @@
+/* -------------------------------- */
+/* COLORS */
+:root {
+  --white-smoke: #f8f8f8;
+  --shuttle-grey: #5f6368;
+  --light-grey: #d2d2d2;
+  --wild-sand: #e7e4df;
+  --ebony: #282c34;
+}
+
+/* -------------------------------- */
+/* GENERAL */
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--white-smoke);
+}
+
+header,
+footer {
+  width: 99.5%;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+
+/* -------------------------------- */
+/* MAIN */
+#curriculum-download {
+  text-decoration: none;
+  color: var(--ebony);
+  font-size: 0.6em;
+}
+
+#upwards-double-arrow {
+  text-decoration: none;
+  font-size: 3em;
+  position: fixed;
+  bottom: 98px;
+  right: 15px;
+  color: var(--shuttle-grey);
+}
+
+main {
+  margin: 150px 0 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  font-family: "Alegreya", serif;
+  background-color: rgba(250, 245, 246, 0.7);
+}
+
+main div {
+  margin: 0 0 52px 0;
+}
+
+hr {
+  width: 90%;
+}
+
+h2 {
+  width: 95%;
+  text-align: left;
+  font-size: 1.6em;
+}
+
+section {
+  width: 55%;
+  min-width: 290px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+section h2 .lower-pencil,
+#language-skills h2 .lower-pencil {
+  font-size: 1.7em;
+}
+
+.leftwards-arrow {
+  font-size: 0.7em;
+}
+
+#main-title {
+  font-family: "Genos", sans-serif;
+  font-weight: 900;
+  font-size: 2.8em;
+}
+
+section div,
+#language-skills div {
+  width: 100%;
+  min-width: 290px;
+  margin: 30px 0;
+  padding: 12px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  background-color: var(--wild-sand);
+}
+
+#language-skills {
+  width: 55%;
+  min-width: 290px;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+section div div {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: column wrap;
+}
+
+p {
+  width: 94%;
+  text-align: center;
+}
+
+section div p:first-child {
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.calendar-paragraph {
+  text-align: left;
+}
+
+.location-paragraph {
+  text-align: right;
+}
+
+.fa-solid,
+.fa-regular {
+  padding-right: 3px;
+}
+
+/* -------------------------------- */
+/* MEDIA QUERIES */
+
+/* 350PX | Max-Width */
+@media only screen and (max-width: 350px) {
+  #upwards-double-arrow {
+    color: var(--light-grey);
+    bottom: 150px;
+  }
+}

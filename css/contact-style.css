@@ -1,0 +1,123 @@
+/* -------------------------------- */
+/* COLORS */
+:root {
+  --white: #ffffff;
+  --white-smoke: #f8f8f8;
+  --wild-sand: #e7e4df;
+  --light-grey: #d2d2d2;
+  --shuttle-grey: #5f6368;
+  --ebony: #282c34;
+  --moccaccino: #5c2b2b;
+  --biloba-flower: #ab85eb;
+
+  --header-height: 18vh;
+}
+
+/* -------------------------------- */
+/* GENERAL */
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--white-smoke);
+}
+
+header,
+footer {
+  width: 99%;
+}
+
+footer {
+  padding-top: 14px;
+}
+
+/* -------------------------------- */
+/* DIV */
+div#title-container {
+  margin-top: calc(var(--header-height) + 20px);
+}
+
+form {
+  width: 300px;
+  margin-bottom: 24px;
+  font-family: "Alegreya", serif;
+}
+
+fieldset {
+  width: 100%;
+  height: 345px;
+  min-width: 290px;
+  padding: 4px;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(231, 238, 223, 0.1);
+}
+
+#main-title {
+  margin-bottom: 6px;
+  text-align: center;
+  line-height: 47px;
+  font-size: 2.4em;
+  font-weight: 900;
+  font-family: "Genos", sans-serif;
+}
+
+input,
+textarea,
+button {
+  width: 95%;
+  border-radius: 6px;
+  letter-spacing: 2px;
+  font-family: "Genos", sans-serif;
+  transition: width 0.4s ease-in-out;
+}
+input,
+#message {
+  padding-left: 14px;
+  font-size: 1em;
+  outline-color: var(--shuttle-grey);
+}
+#message {
+  height: 70px;
+  padding-top: 14px;
+}
+
+input {
+  height: 50px;
+}
+
+button {
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.9em;
+  color: var(--white);
+  background-color: var(--biloba-flower);
+  border: 1px solid var(--white);
+  box-shadow: 0 0 3px var(--ebony);
+}
+
+input[type="text"]:focus,
+#message:focus {
+  width: 97%;
+}
+
+/* MEDIA QUERIES */
+
+/* ------------------------------------- */
+@media only screen and (min-width: 600px) {
+  form {
+    width: 330px;
+  }
+}
+
+/* ------------------------------------- */
+@media only screen and (min-width: 800px) {
+  form {
+    width: 350px;
+  }
+}
