@@ -5,8 +5,8 @@
   --light-grey: #d2d2d2;
   --shuttle-grey: #5f6368;
   --white-smoke: #f8f8f8;
-  --ebony: #282c34;
   --moccaccino: #5c2b2b;
+  --ebony: #282c34;
 }
 
 /* -------------------------------- */
@@ -35,7 +35,7 @@ main {
   width: 85%;
   min-width: 300px;
   padding: 0;
-  margin: 150px 0 0 0;
+  margin: 162px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
