@@ -78,19 +78,32 @@
       </h1>
     </div>
 
-    <form action="#" method="post">
+    <!-- https://www.staticforms.xyz/ -->
+    <form action="https://api.staticforms.xyz/submit" method="post">
+      <input 
+        type="hidden" 
+        name="accessKey" 
+        value="eceb305a-de84-4ec8-b898-2268da9e1d66"
+        >
+      <input 
+        type="hidden" 
+        name="redirectTo" 
+        value="https://portfolio-leandromedvedev.vercel.app/html/pages/contact.html"
+        >
+
       <fieldset>
+                
         <input
           type="text"
-          id="first-name"
-          name="first-name"
+          id="firstName"
+          name="firstName"
           placeholder="Nome"
           required
         >
         <input
           type="text"
-          id="last-name"
-          name="last-name"
+          id="lastName"
+          name="lastName"
           placeholder="Sobrenome"
           required
         >
@@ -110,6 +123,7 @@
         >
         <textarea
           id="message"
+          name="message"
           maxlength="500"
           placeholder="Texto da mensagem"
           required

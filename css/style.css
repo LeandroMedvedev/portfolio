@@ -85,8 +85,8 @@ header h1 {
   width: max-content;
   display: flex;
   flex-direction: column;
-  gap: var(--hamburger-gap);
   position: absolute;
+  gap: var(--hamburger-gap);
   left: var(--hamburger-margin);
   cursor: pointer;
   z-index: 3;
