@@ -225,6 +225,13 @@ h1 .dev-rest {
   display: none;
 }
 
+.active {
+  color: var(--biloba-flower);
+}
+a.active:hover {
+  border: none;
+}
+
 /* -------------------------------- */
 /* MAIN */
 main {

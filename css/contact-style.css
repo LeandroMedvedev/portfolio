@@ -96,9 +96,9 @@ button {
   cursor: pointer;
   font-size: 1.9em;
   color: var(--white);
-  background-color: var(--biloba-flower);
   border: 1px solid var(--white);
   box-shadow: 0 0 3px var(--ebony);
+  background-color: var(--biloba-flower);
 }
 
 input[type="text"]:focus,
