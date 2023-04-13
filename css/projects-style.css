@@ -183,6 +183,10 @@ p#main-paragraph {
   color: var(--black-russian);
 }
 
+.section-head a {
+  color: var(--black-russian);
+}
+
 hr.effect {
   width: 50%;
   border: 0;
