@@ -83,7 +83,7 @@ main section div,
 
 main section:last-child p {
   text-indent: 15px;
-  text-align: left;
+  text-align: justify;
   line-height: 1.5em;
 }
 
@@ -180,12 +180,16 @@ hr:after {
 }
 
 /* -------------------------------- */
-/* 1070PX | Min-Width */
-@media only screen and (min-width: 1070px) {
+/* 900PX | Min-Width */
+@media only screen and (min-width: 900px) {
   #history-container {
     display: flex;
+    justify-content: space-evenly;
   }
   .paragraphs-container {
-    width: 50%;
+    width: 45%;
+    display: flex;
+    max-height: 925px;
+    flex-flow: row wrap;
   }
 }

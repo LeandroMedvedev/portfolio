@@ -435,6 +435,13 @@ footer div {
 /* ------------------------------------- */
 /* 500PX | Max-Width */
 @media only screen and (max-width: 500px) {
+  .hamburger-menu::before,
+  .hamburger-menu::after,
+  .hamburger-menu input {
+    width: calc(var(--bar-width) - 11px);
+    height: calc(var(--bar-height) - 1px);
+  }
+
   img.robot {
     display: none;
   }
@@ -442,10 +449,6 @@ footer div {
   div.presentation h1 {
     font-size: 1.9em;
     padding-left: 100px;
-  }
-
-  label.hamburger-menu {
-    width: 55px;
   }
 }
 
