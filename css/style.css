@@ -302,6 +302,7 @@ main .greetings p {
 .introduction-paragraph,
 .links-paragraph {
   text-indent: 15px;
+  text-align: justify;
 }
 
 .introduction-paragraph::first-letter {
@@ -397,6 +398,7 @@ footer div {
   main .greetings {
     border-left: none;
     border-top: 1px solid var(--shuttle-grey);
+    padding-left: 0;
   }
 
   .greetings #hello-title {
